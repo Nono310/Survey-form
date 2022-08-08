@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nono's Survey form</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">InSite Survey Form</h1>
+    <p id="description">Thankyou for taking the time to help us improve our platform.</p>
+    </header>
+    
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label">Name <input type="text" placeholder="Enter your name" class="form-control" id="name" required></label>
+        </div>
+        <div class="form-group">
+        <label id="email-label">Email <input type="email" placeholder="Enter your email" class="form-control" id="email" required></label>
+        </div>
+        <div class="form-group">
+        <label id="number-label">Age <input type="number" placeholder="Age" id="number" class="form-control" min="10" max="120"></label>
+        </div>
+        <div class="form-group">
+         <p>What option best describes your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full time job</option>
+          <option value="learner">Full time learner</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you recommend InSite to a friend?</p>
+        <label><input type="radio" class="radio" name="group1"  value="Definitely" checked>Definely</label>
+        <label><input type="radio" class="radio" name="group1" value="May be">May be</label>
+        <label><input type="radio" class="radio" name="group1" value="Not Sure">Not Sure</label>
+      </div>
+
+      <div class="form-group">
+        <p>What is your favorite feature of InSite?</p>
+          <select id="most-like" name="mostlike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="open source">Open source</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="challenges">Challenges</option>
+          </select>  
+      </div>
+
+      <div class="form-group">
+        <p>What would you like to see improve ?</p>
+        <label><input type="checkbox" value="front" class="checkbox">Front-end Projects</label>
+        <label><input type="checkbox" value="back" class="checkbox">Back-end Projects</label>
+        <label><input type="checkbox" value="data" class="checkbox">Data Visualization</label>
+        <label><input type="checkbox" value="open" class="checkbox">Open Source Community</label>
+        <label><input type="checkbox" value="city" class="checkbox">City Meetups</label>
+      </div>
+
+      <div class="form-group">
+        <p>Comments and Suggestions</p> 
+        <textarea id="textarea" name="textarea" class="textarea">Enter your comment here</textarea>
+        </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit">Submit</button>
+      </div>
+
+    </form>
+  </div>
+
+
+</html>
